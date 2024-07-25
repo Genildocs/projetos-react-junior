@@ -1,3 +1,26 @@
+/* googles fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* 
+title:
+font-family: "Montserrat", sans-serif;
+
+text:
+font-family: "Open Sans", sans-serif;
+
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  ul li {
+    @apply border-2 border-solid border-white px-7 py-2 rounded-3xl hover:bg-white hover:text-black;
+  }
+
+  ul li a {
+    @apply font-bold font-openSans uppercase;
+  }
+}
